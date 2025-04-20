@@ -14,7 +14,8 @@ const USER_INFO_BASE = {
   role: "wanna be swe",
   languages: "forever learning c++, java, typescript",
   frameworks: "next.js",
-  interests: "anything math, building things, money",
+  interests:
+    "anything math, money, building things, getting a 1989 soarer, getting a 180sx",
   git: "github.com/jecal",
 };
 
@@ -250,11 +251,11 @@ function StatusCommand() {
 function HelpCommand() {
   const helpItems = [
     { cmd: "help", desc: "show this help message" },
-    { cmd: "about", desc: "show portfolio information" },
+    { cmd: "about", desc: "portfolio information" },
     { cmd: "music", desc: "my fav tracks & albums atm" },
-    { cmd: "exp", desc: "show job experience" },
-    { cmd: "projects", desc: "show project portfolio" },
-    { cmd: "status", desc: "show employment status" },
+    { cmd: "exp", desc: "my job experience" },
+    { cmd: "proj", desc: "list of my projects" },
+    { cmd: "status", desc: "employment status" },
     { cmd: "clear", desc: "clear the terminal" },
   ];
   return (
@@ -274,7 +275,7 @@ const commands: Record<string, (clearHistory: () => void) => React.ReactNode> =
     about: () => <AboutCommand />,
     music: () => <MusicCommand />,
     exp: () => <ExpCommand />,
-    projects: () => <ProjectsCommand />,
+    proj: () => <ProjectsCommand />,
     status: () => <StatusCommand />,
     clear: (clearHistory) => {
       clearHistory();
@@ -353,7 +354,7 @@ export default function Home() {
             style={{ color: "#FFF" }}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Type a command..."
+            placeholder="type a command..."
           />
         </form>
       </div>
