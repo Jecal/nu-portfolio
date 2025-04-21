@@ -1,0 +1,51 @@
+{
+  "USER_NAMES": ["jecal", "typo", "jullian"],
+  "USER_INFO_BASE": {
+    "location": "usa, cwru '29",
+    "role": "wannabe swe",
+    "languages": "forever learning c++, java, typescript",
+    "frameworks": "next.js",
+    "interests": "anything math, money, building things",
+    "git": "github.com/jecal"
+  },
+  "JOBS_INFO_BASE": [
+    {
+      "title": "it technician",
+      "company": "bergenfield high school",
+      "date": "summer 2023",
+      "description": "helped install access points and managed tech inventory. created a spreadsheet system to track and manage equipment, including repairs and replacements. refurbished old tech items like patch wires, monitors, laptops, and printers."
+    },
+    {
+      "title": "cram slide designer",
+      "company": "fiveable",
+      "date": "spring 2024",
+      "description": "created slides for cram sessions on ap calc topics in google slides. worked with and communicated with team via slack."
+    }
+  ],
+  "PROJECTS_INFO_BASE": [
+    {
+      "title": "dap",
+      "status": "in the works",
+      "frameworks": "next.js, tailwindcss, ts, supabase",
+      "description": "job search engine for teens. mvp will prolly be out by late may."
+    },
+    {
+      "title": "portfolio",
+      "status": "active",
+      "frameworks": "next.js, tailwindcss, ts",
+      "description": "terminal inspired ui portfolio. you can literally just make things."
+    },
+    {
+      "title": "benkyoo",
+      "status": "dead",
+      "frameworks": "vite, chakraui v2, firebase, netlify",
+      "description": "buildspace proj. note sharing platform for students. realized this wasn't a good idea"
+    },
+    {
+      "title": "b-chat",
+      "status": "dead",
+      "frameworks": "react, bootstrap, firebase, netlify",
+      "description": "project i used to learn how firebase stuff works."
+    }
+  ]
+}
