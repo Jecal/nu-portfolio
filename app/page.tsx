@@ -54,39 +54,25 @@ export default function Home() {
   return (
     <div
       className="min-h-screen h-screen flex items-center justify-center"
-      style={{
-        background: "#0D142E",
-        color: "#FFF",
-        overflow: "hidden",
-        position: "fixed",
-        inset: 0,
-      }}
+      style={{ background: "#0D142E", color: "#FFF", overflow: "hidden" }}
     >
       <div
-        className="w-full max-w-5xl rounded-lg p-4 font-mono text-lg sm:p-6 sm:rounded-lg sm:max-w-5xl h-full flex flex-col justify-between"
-        style={{
-          background: "#0D142E",
-          color: "#FFF",
-          overflow: "hidden",
-          maxHeight: "100vh",
-        }}
+        className="w-full max-w-5xl rounded-lg p-6 font-mono text-lg sm:p-6 sm:rounded-lg sm:max-w-5xl h-full flex flex-col justify-between gap-4"
+        style={{ background: "#0D142E", color: "#FFF", overflow: "hidden" }}
       >
-        <div className="flex flex-col h-full" style={{ flex: 1, minHeight: 0 }}>
+        <div className="flex flex-col h-full" style={{ minHeight: 0 }}>
           <div
             className="flex-1 flex flex-col justify-end"
-            style={{ overflow: "hidden", maxHeight: "calc(100vh - 60px)" }}
+            style={{ minHeight: 0, overflow: "hidden" }}
           >
             <div
               style={{
-                overflow: "auto",
+                overflow: "hidden",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "flex-end",
-                maxHeight: "100%",
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
+                height: "100%",
               }}
-              className="hide-scrollbar"
             >
               {history.map((h, i) => (
                 <div key={i} className="mb-6">
@@ -101,7 +87,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <form onSubmit={handleCommand} className="flex items-center gap-2 mt-2">
+        <form onSubmit={handleCommand} className="flex items-center gap-2 mt-4">
           <span style={{ color: "#FFF" }}>$</span>
           <input
             autoFocus
