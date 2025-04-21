@@ -46,7 +46,7 @@ export function SplashCommand() {
 `}
       </pre>
       <div className="text-md mt-4" style={{ color: "#FFF" }}>
-        type "h" to get started.
+        type &quot;h&quot; to get started.
       </div>
     </>
   );
