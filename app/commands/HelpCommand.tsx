@@ -10,7 +10,8 @@ export function HelpCommand() {
     { cmd: "xp", desc: "my job experience" },
     { cmd: "proj", desc: "list of my projects" },
     { cmd: "stat", desc: "employment status" },
-    { cmd: "clear", desc: "clear the terminal" },
+    { cmd: "cls", desc: "clear the terminal" },
+    { cmd: "ct", desc: "contact info" },
   ];
   return (
     <ul style={{ color: "#FFF", paddingLeft: "1.25rem", listStyle: "none" }}>

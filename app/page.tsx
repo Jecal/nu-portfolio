@@ -9,6 +9,7 @@ import { ProjectsCommand } from "./commands/ProjectsCommand";
 import { StatusCommand } from "./commands/StatusCommand";
 import { HelpCommand } from "./commands/HelpCommand";
 import { SplashCommand } from "./commands/SplashCommand";
+import { ContactCommand } from "./commands/ContactCommand";
 
 const commands: Record<string, (clearHistory: () => void) => React.ReactNode> =
   {
@@ -17,11 +18,12 @@ const commands: Record<string, (clearHistory: () => void) => React.ReactNode> =
     xp: () => <ExpCommand />,
     proj: () => <ProjectsCommand />,
     stat: () => <StatusCommand />,
-    clear: (clearHistory) => {
+    cls: (clearHistory) => {
       clearHistory();
       return null;
     },
     h: () => <HelpCommand />,
+    ct: () => <ContactCommand />,
   };
 
 export default function Home() {
@@ -43,7 +45,7 @@ export default function Home() {
     if (cmd && commands[cmd]) {
       output = commands[cmd](clearHistory);
     }
-    if (cmd === "clear") {
+    if (cmd === "cls") {
       setInput("");
       return;
     }
