@@ -22,12 +22,16 @@
             justify-content: center;
             align-items: center;
             padding: 40px 20px;
+            overflow: hidden;
         }
 
         .container {
             max-width: 600px;
+            width: calc(100vw - 20px);
             margin: 0 auto;
             text-align: center;
+            max-height: 100vh;
+            overflow-y: auto;
         }
 
         h1 {
@@ -51,7 +55,8 @@
         }
 
         .hero-image {
-            width: 600px;
+            width: calc(100vw - 20px);
+            max-width: 600px;
             height: 200px;
             background-color: #e0e0e0;
             margin: 0 auto 1rem;
@@ -111,7 +116,17 @@
             }
             
             body {
-                padding: 20px 15px;
+                padding: 10px 5px;
+            }
+            
+            .hero-image {
+                width: calc(100vw - 20px);
+                height: calc((100vw - 20px) / 3);
+                max-height: 150px;
+            }
+            
+            .section {
+                margin-bottom: 20px;
             }
         }
     </style>
