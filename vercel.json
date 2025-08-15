@@ -8,7 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/jullian_portfolio.html"
+      "dest": "/index.html"
     }
   ]
 }
